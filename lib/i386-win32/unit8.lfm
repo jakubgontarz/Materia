@@ -1,0 +1,246 @@
+object Form8: TForm8
+  Left = 1204
+  Height = 286
+  Top = 459
+  Width = 328
+  BorderStyle = bsDialog
+  Caption = 'Menadżer przekrojów'
+  ClientHeight = 286
+  ClientWidth = 328
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object ListBox1: TListBox
+    Left = 0
+    Height = 218
+    Top = 0
+    Width = 144
+    ItemHeight = 0
+    OnSelectionChange = ListBox1SelectionChange
+    TabOrder = 0
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 8
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 1
+    SpaceChar = '_'
+  end
+  object Label1: TLabel
+    Left = 155
+    Height = 13
+    Top = 6
+    Width = 32
+    Caption = 'Nazwa'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 155
+    Height = 13
+    Top = 152
+    Width = 42
+    Caption = 'Material:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 155
+    Height = 13
+    Top = 174
+    Width = 34
+    Caption = 'E [kPa]'
+    ParentColor = False
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 174
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 2
+    SpaceChar = '_'
+  end
+  object Label4: TLabel
+    Left = 155
+    Height = 13
+    Top = 202
+    Width = 46
+    Caption = 'g [g/cm3]'
+    ParentColor = False
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 202
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 3
+    SpaceChar = '_'
+  end
+  object Label5: TLabel
+    Left = 155
+    Height = 13
+    Top = 230
+    Width = 41
+    Caption = 'α.t [1/K]'
+    ParentColor = False
+  end
+  object MaskEdit4: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 230
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 4
+    SpaceChar = '_'
+  end
+  object Label6: TLabel
+    Left = 155
+    Height = 13
+    Top = 40
+    Width = 43
+    Caption = 'Przekrój:'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 155
+    Height = 13
+    Top = 62
+    Width = 32
+    Caption = 'A [m2]'
+    ParentColor = False
+  end
+  object MaskEdit5: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 62
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 5
+    SpaceChar = '_'
+  end
+  object Label8: TLabel
+    Left = 155
+    Height = 13
+    Top = 90
+    Width = 30
+    Caption = 'J [m4]'
+    ParentColor = False
+  end
+  object MaskEdit6: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 90
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 6
+    SpaceChar = '_'
+  end
+  object Label9: TLabel
+    Left = 155
+    Height = 13
+    Top = 118
+    Width = 25
+    Caption = 'h [m]'
+    ParentColor = False
+  end
+  object MaskEdit7: TMaskEdit
+    Left = 216
+    Height = 21
+    Top = 118
+    Width = 102
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 7
+    SpaceChar = '_'
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 25
+    Top = 256
+    Width = 67
+    Caption = 'Dodaj z bazy'
+    OnClick = Button1Click
+    TabOrder = 8
+  end
+  object Button3: TButton
+    Left = 248
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button3Click
+    TabOrder = 9
+  end
+  object Button4: TButton
+    Left = 0
+    Height = 25
+    Top = 226
+    Width = 50
+    Caption = 'Usuń'
+    OnClick = Button4Click
+    TabOrder = 10
+  end
+  object Button5: TButton
+    Left = 94
+    Height = 25
+    Top = 226
+    Width = 50
+    Caption = 'Dodaj'
+    OnClick = Button5Click
+    TabOrder = 11
+  end
+  object Button2: TButton
+    Left = 50
+    Height = 25
+    Top = 226
+    Width = 22
+    Caption = '˅'
+    OnClick = Button2Click
+    TabOrder = 12
+  end
+  object Button6: TButton
+    Left = 72
+    Height = 25
+    Top = 226
+    Width = 22
+    Caption = '˄'
+    OnClick = Button6Click
+    TabOrder = 13
+  end
+  object Button12: TButton
+    Left = 176
+    Height = 25
+    Top = 256
+    Width = 71
+    Caption = 'Anuluj'
+    OnClick = Button12Click
+    TabOrder = 14
+  end
+  object Button7: TButton
+    Left = 80
+    Height = 25
+    Top = 256
+    Width = 67
+    Caption = 'Zapisz wzór'
+    OnClick = Button7Click
+    TabOrder = 15
+  end
+  object Button8: TButton
+    Left = 272
+    Height = 17
+    Top = 39
+    Width = 46
+    Caption = 'Definiuj'
+    OnClick = Button8Click
+    TabOrder = 16
+  end
+end

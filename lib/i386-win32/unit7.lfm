@@ -1,0 +1,150 @@
+object Form7: TForm7
+  Left = 1255
+  Height = 144
+  Top = 63
+  Width = 222
+  BorderStyle = bsDialog
+  Caption = 'Podzial pręta'
+  ClientHeight = 144
+  ClientWidth = 222
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object RadioButton1: TRadioButton
+    Left = 4
+    Height = 17
+    Top = 9
+    Width = 87
+    Caption = 'Rownomiernie'
+    Checked = True
+    OnChange = RadioButton1Change
+    TabOrder = 11
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    Left = 120
+    Height = 17
+    Top = 8
+    Width = 69
+    Caption = 'W punkcie'
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 4
+    Height = 13
+    Top = 32
+    Width = 44
+    Caption = 'Elementy'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 144
+    Height = 25
+    Top = 112
+    Width = 71
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button17: TButton
+    Left = 72
+    Height = 25
+    Top = 112
+    Width = 71
+    Caption = 'Anuluj'
+    OnClick = Button17Click
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 4
+    Height = 13
+    Top = 56
+    Width = 60
+    Caption = 'Polożenie [-]'
+    ParentColor = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 1
+    Height = 22
+    Top = 79
+    Width = 125
+    Max = 100
+    OnChange = TrackBar1Change
+    PageSize = 10
+    Position = 50
+    Enabled = False
+    TabOrder = 3
+  end
+  object Button8: TButton
+    Left = 128
+    Height = 21
+    Top = 80
+    Width = 30
+    Caption = '-0.1'
+    Enabled = False
+    OnClick = Button8Click
+    TabOrder = 4
+  end
+  object Button9: TButton
+    Left = 160
+    Height = 21
+    Top = 80
+    Width = 29
+    Caption = '+0.1'
+    Enabled = False
+    OnClick = Button9Click
+    TabOrder = 5
+  end
+  object Button10: TButton
+    Left = 192
+    Height = 21
+    Top = 80
+    Width = 30
+    Caption = 'Odw.'
+    Enabled = False
+    OnClick = Button10Click
+    TabOrder = 6
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 133
+    Height = 21
+    Top = 56
+    Width = 89
+    CharCase = ecNormal
+    Enabled = False
+    MaxLength = 0
+    TabOrder = 7
+    OnChange = MaskEdit2Change
+    Text = '0,5'
+    SpaceChar = '_'
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 109
+    Height = 21
+    Top = 32
+    Width = 49
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 8
+    OnChange = MaskEdit3Change
+    Text = '2'
+    SpaceChar = '_'
+  end
+  object Button2: TButton
+    Left = 164
+    Height = 21
+    Top = 32
+    Width = 27
+    Caption = '-1'
+    OnClick = Button2Click
+    TabOrder = 9
+  end
+  object Button3: TButton
+    Left = 193
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+1'
+    OnClick = Button3Click
+    TabOrder = 10
+  end
+end

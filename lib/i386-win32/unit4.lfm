@@ -1,0 +1,153 @@
+object Form4: TForm4
+  Left = 1295
+  Height = 151
+  Top = 107
+  Width = 222
+  BorderStyle = bsDialog
+  Caption = 'Zadaj moment skupiony'
+  ClientHeight = 151
+  ClientWidth = 222
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 39
+    Caption = 'M [kNm]'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 11
+    Height = 21
+    Top = 32
+    Width = 27
+    Caption = '-1'
+    OnClick = Button2Click
+    TabOrder = 0
+  end
+  object Button3: TButton
+    Left = 40
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+1'
+    OnClick = Button3Click
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 13
+    Top = 64
+    Width = 61
+    Caption = 'Położenie [-]'
+    ParentColor = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 0
+    Height = 22
+    Top = 87
+    Width = 125
+    Max = 100
+    OnChange = TrackBar1Change
+    PageSize = 10
+    Position = 50
+    TabOrder = 2
+  end
+  object Button5: TButton
+    Left = 74
+    Height = 21
+    Top = 32
+    Width = 27
+    Caption = '-10'
+    OnClick = Button5Click
+    TabOrder = 3
+  end
+  object Button6: TButton
+    Left = 103
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+10'
+    OnClick = Button6Click
+    TabOrder = 4
+  end
+  object Button7: TButton
+    Left = 140
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+/-'
+    OnClick = Button7Click
+    TabOrder = 5
+  end
+  object Button8: TButton
+    Left = 127
+    Height = 21
+    Top = 88
+    Width = 30
+    Caption = '-0.1'
+    OnClick = Button8Click
+    TabOrder = 6
+  end
+  object Button9: TButton
+    Left = 159
+    Height = 21
+    Top = 88
+    Width = 29
+    Caption = '+0.1'
+    OnClick = Button9Click
+    TabOrder = 7
+  end
+  object Button10: TButton
+    Left = 191
+    Height = 21
+    Top = 88
+    Width = 30
+    Caption = 'Odw.'
+    OnClick = Button10Click
+    TabOrder = 8
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 132
+    Height = 21
+    Top = 8
+    Width = 89
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 9
+    OnChange = MaskEdit1Change
+    Text = '10'
+    SpaceChar = '_'
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 132
+    Height = 21
+    Top = 64
+    Width = 89
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 10
+    OnChange = MaskEdit2Change
+    Text = '0,5'
+    SpaceChar = '_'
+  end
+  object Button1: TButton
+    Left = 146
+    Height = 25
+    Top = 120
+    Width = 71
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 11
+  end
+  object Button12: TButton
+    Left = 72
+    Height = 25
+    Top = 120
+    Width = 71
+    Caption = 'Anuluj'
+    OnClick = Button12Click
+    TabOrder = 12
+  end
+end

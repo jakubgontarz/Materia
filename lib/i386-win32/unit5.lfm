@@ -1,0 +1,164 @@
+object Form5: TForm5
+  Left = 1317
+  Height = 107
+  Top = 129
+  Width = 221
+  BorderStyle = bsDialog
+  Caption = 'Zadaj temperaturę'
+  ClientHeight = 107
+  ClientWidth = 221
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 29
+    Caption = 'Tg [K]'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 2
+    Height = 21
+    Top = 32
+    Width = 19
+    Caption = '-1'
+    OnClick = Button2Click
+    TabOrder = 0
+  end
+  object Button3: TButton
+    Left = 24
+    Height = 21
+    Top = 32
+    Width = 21
+    Caption = '+1'
+    OnClick = Button3Click
+    TabOrder = 1
+  end
+  object Button5: TButton
+    Left = 47
+    Height = 21
+    Top = 32
+    Width = 27
+    Caption = '-10'
+    OnClick = Button5Click
+    TabOrder = 2
+  end
+  object Button6: TButton
+    Left = 76
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+10'
+    OnClick = Button6Click
+    TabOrder = 3
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 56
+    Height = 21
+    Top = 8
+    Width = 49
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 4
+    OnChange = MaskEdit1Change
+    Text = '1'
+    SpaceChar = '_'
+  end
+  object Button4: TButton
+    Left = 114
+    Height = 21
+    Top = 32
+    Width = 19
+    Caption = '-1'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+  object Button8: TButton
+    Left = 136
+    Height = 21
+    Top = 32
+    Width = 21
+    Caption = '+1'
+    OnClick = Button8Click
+    TabOrder = 6
+  end
+  object Button9: TButton
+    Left = 159
+    Height = 21
+    Top = 32
+    Width = 27
+    Caption = '-10'
+    OnClick = Button9Click
+    TabOrder = 7
+  end
+  object Button10: TButton
+    Left = 188
+    Height = 21
+    Top = 32
+    Width = 29
+    Caption = '+10'
+    OnClick = Button10Click
+    TabOrder = 8
+  end
+  object Label2: TLabel
+    Left = 122
+    Height = 13
+    Top = 8
+    Width = 29
+    Caption = 'Td [K]'
+    ParentColor = False
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 168
+    Height = 21
+    Top = 8
+    Width = 49
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 9
+    OnChange = MaskEdit3Change
+    Text = '1'
+    SpaceChar = '_'
+  end
+  object Button1: TButton
+    Left = 158
+    Height = 25
+    Top = 74
+    Width = 58
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 10
+  end
+  object Button16: TButton
+    Left = 101
+    Height = 25
+    Top = 74
+    Width = 55
+    Caption = 'Anuluj'
+    OnClick = Button16Click
+    TabOrder = 11
+  end
+  object Button20: TButton
+    Left = 8
+    Height = 25
+    Top = 74
+    Width = 26
+    Caption = '<'
+    OnClick = Button20Click
+    PopupMenu = PopupMenu1
+    TabOrder = 12
+  end
+  object PopupMenu1: TPopupMenu
+    left = 32
+    top = 64
+    object MenuItem1: TMenuItem
+      Caption = '+/-'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'dól/góra'
+      OnClick = MenuItem3Click
+    end
+  end
+end

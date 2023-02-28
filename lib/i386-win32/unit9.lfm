@@ -1,0 +1,51 @@
+object Form9: TForm9
+  Left = 1271
+  Height = 493
+  Top = 196
+  Width = 297
+  BorderStyle = bsDialog
+  Caption = 'Baza przekrojów'
+  ClientHeight = 493
+  ClientWidth = 297
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object TreeView1: TTreeView
+    Left = 0
+    Height = 457
+    Top = 0
+    Width = 297
+    DefaultItemHeight = 16
+    ReadOnly = True
+    TabOrder = 1
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object Button1: TButton
+    Left = 216
+    Height = 25
+    Top = 464
+    Width = 71
+    Caption = 'Dodaj'
+    OnClick = Button1Click
+    TabOrder = 0
+    TabStop = False
+  end
+  object Button12: TButton
+    Left = 144
+    Height = 25
+    Top = 464
+    Width = 71
+    Caption = 'Zamknij'
+    OnClick = Button12Click
+    TabOrder = 2
+    TabStop = False
+  end
+  object Button13: TButton
+    Left = 8
+    Height = 25
+    Top = 464
+    Width = 80
+    Caption = 'Wczytaj bazę'
+    TabOrder = 3
+    TabStop = False
+  end
+end

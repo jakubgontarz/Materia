@@ -1,0 +1,154 @@
+object Form15: TForm15
+  Left = 441
+  Height = 313
+  Top = 335
+  Width = 374
+  Caption = 'Menadżer wariantów'
+  ClientHeight = 313
+  ClientWidth = 374
+  FormStyle = fsStayOnTop
+  OnActivate = FormActivate
+  OnClose = FormClose
+  Position = poScreenCenter
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    AnchorSideLeft.Control = Button3
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Button3
+    AnchorSideRight.Side = asrBottom
+    Left = 261
+    Height = 26
+    Top = 5
+    Width = 108
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 5
+    Caption = 'Dodaj'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+    TabStop = False
+  end
+  object Button2: TButton
+    AnchorSideLeft.Control = Button3
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Button3
+    AnchorSideRight.Side = asrBottom
+    Left = 261
+    Height = 26
+    Top = 33
+    Width = 108
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 2
+    Caption = 'Usuń'
+    Enabled = False
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 5
+    TabStop = False
+  end
+  object Button3: TButton
+    AnchorSideTop.Control = Button2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 261
+    Height = 25
+    Top = 61
+    Width = 108
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 5
+    Caption = 'Przenieś w górę'
+    Enabled = False
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 3
+    TabStop = False
+  end
+  object Button4: TButton
+    AnchorSideLeft.Control = Button3
+    AnchorSideTop.Control = Button3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Button3
+    AnchorSideRight.Side = asrBottom
+    Left = 261
+    Height = 26
+    Top = 88
+    Width = 108
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 2
+    Caption = 'Przenieś w dół'
+    Enabled = False
+    OnClick = Button4Click
+    ParentFont = False
+    TabOrder = 4
+    TabStop = False
+  end
+  object Button5: TButton
+    AnchorSideLeft.Control = Button3
+    AnchorSideRight.Control = Button3
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button6
+    Left = 261
+    Height = 24
+    Top = 256
+    Width = 108
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 2
+    Cancel = True
+    Caption = 'Anuluj'
+    ModalResult = 2
+    OnClick = Button5Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ListView1: TListView
+    AnchorSideRight.Control = Button1
+    Left = 0
+    Height = 315
+    Top = 0
+    Width = 256
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 5
+    Columns = <    
+      item
+        Caption = 'Nazwa'
+        Width = 120
+      end    
+      item
+        Caption = 'Nr'
+        Width = 30
+      end    
+      item
+        Caption = 'Ciężar wł.'
+        Width = 100
+      end>
+    ParentFont = False
+    RowSelect = True
+    TabStop = False
+    TabOrder = 6
+    ViewStyle = vsReport
+    OnMouseDown = ListView1MouseDown
+  end
+  object Button6: TButton
+    AnchorSideLeft.Control = Button3
+    AnchorSideRight.Control = Button3
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 261
+    Height = 26
+    Top = 282
+    Width = 108
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 5
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = Button6Click
+    ParentFont = False
+    TabOrder = 1
+  end
+end

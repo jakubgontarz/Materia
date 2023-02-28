@@ -1,0 +1,87 @@
+object Form9: TForm9
+  Left = 1226
+  Height = 407
+  Top = 125
+  Width = 238
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Baza przekrojów'
+  ClientHeight = 407
+  ClientWidth = 238
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '2.0.10.0'
+  object TreeView1: TTreeView
+    Left = 0
+    Height = 366
+    Top = 0
+    Width = 238
+    HideSelection = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object Button1: TButton
+    AnchorSideTop.Control = TreeView1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = TreeView1
+    AnchorSideRight.Side = asrBottom
+    Left = 177
+    Height = 25
+    Top = 370
+    Width = 57
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    Caption = 'Dodaj'
+    Default = True
+    ModalResult = 1
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+    TabStop = False
+  end
+  object Button12: TButton
+    AnchorSideTop.Control = Button1
+    AnchorSideRight.Control = Button1
+    AnchorSideBottom.Control = Button1
+    AnchorSideBottom.Side = asrBottom
+    Left = 116
+    Height = 25
+    Top = 370
+    Width = 61
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoSize = True
+    Cancel = True
+    Caption = 'Zamknij'
+    ModalResult = 2
+    OnClick = Button12Click
+    ParentFont = False
+    TabOrder = 2
+    TabStop = False
+  end
+  object Button13: TButton
+    AnchorSideLeft.Control = TreeView1
+    AnchorSideTop.Control = TreeView1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button12
+    AnchorSideBottom.Side = asrBottom
+    Left = 4
+    Height = 25
+    Top = 370
+    Width = 94
+    Anchors = [akTop, akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    Caption = 'Wczytaj bazę'
+    OnClick = Button13Click
+    ParentFont = False
+    TabOrder = 3
+    TabStop = False
+  end
+end

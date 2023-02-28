@@ -1,0 +1,163 @@
+object Form13: TForm13
+  Left = 1239
+  Height = 190
+  Top = 365
+  Width = 326
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Linia wpływu'
+  ClientHeight = 190
+  ClientWidth = 326
+  FormStyle = fsStayOnTop
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '2.0.10.0'
+  object Label2: TLabel
+    AnchorSideLeft.Control = Label3
+    AnchorSideTop.Control = FloatSpinEdit1
+    AnchorSideTop.Side = asrCenter
+    Left = 5
+    Height = 15
+    Top = 34
+    Width = 67
+    Caption = 'Położenie [-]'
+    ParentColor = False
+    ParentFont = False
+  end
+  object TrackBar1: TTrackBar
+    AnchorSideLeft.Control = Label3
+    Left = 5
+    Height = 22
+    Top = 55
+    Width = 150
+    Max = 100
+    OnChange = TrackBar1Change
+    PageSize = 10
+    Position = 50
+    ShowSelRange = False
+    TabStop = False
+    TickStyle = tsNone
+    OnKeyUp = TrackBar1KeyUp
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button10: TButton
+    AnchorSideLeft.Control = TrackBar1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = FloatSpinEdit1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = FloatSpinEdit1
+    AnchorSideRight.Side = asrBottom
+    Left = 155
+    Height = 24
+    Top = 55
+    Width = 43
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 5
+    Caption = 'Odw.'
+    OnClick = Button10Click
+    ParentFont = False
+    TabOrder = 3
+    TabStop = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrCenter
+    Left = 5
+    Height = 15
+    Top = 9
+    Width = 24
+    BorderSpacing.Left = 5
+    Caption = 'Pręt:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button2: TButton
+    AnchorSideTop.Control = Button10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Button10
+    AnchorSideRight.Side = asrBottom
+    Left = 118
+    Height = 24
+    Top = 95
+    Width = 80
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 16
+    BorderSpacing.Bottom = 5
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button12: TButton
+    AnchorSideTop.Control = Button2
+    AnchorSideRight.Control = Button2
+    AnchorSideBottom.Control = Button2
+    AnchorSideBottom.Side = asrBottom
+    Left = 38
+    Height = 24
+    Top = 95
+    Width = 80
+    Anchors = [akTop, akRight, akBottom]
+    Cancel = True
+    Caption = 'Anuluj'
+    ModalResult = 2
+    OnClick = Button12Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ToggleBox1: TToggleBox
+    AnchorSideTop.Control = Edit3
+    AnchorSideRight.Control = Edit3
+    AnchorSideBottom.Control = Edit3
+    AnchorSideBottom.Side = asrBottom
+    Left = 98
+    Height = 23
+    Top = 5
+    Width = 53
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 2
+    Caption = 'Wskaż'
+    OnChange = ToggleBox1Change
+    ParentFont = False
+    TabOrder = 4
+    TabStop = False
+  end
+  object Edit3: TEdit
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Button10
+    AnchorSideRight.Side = asrBottom
+    Left = 153
+    Height = 23
+    Top = 5
+    Width = 45
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 5
+    OnChange = Edit3Change
+    ParentFont = False
+    TabOrder = 5
+    Text = 'Edit3'
+  end
+  object FloatSpinEdit1: TFloatSpinEdit
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Edit3
+    AnchorSideRight.Side = asrBottom
+    Left = 108
+    Height = 23
+    Top = 30
+    Width = 90
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 2
+    DecimalPlaces = 4
+    Increment = 0.1
+    MaxValue = 1
+    OnChange = FloatSpinEdit1Change
+    ParentFont = False
+    TabOrder = 6
+  end
+end

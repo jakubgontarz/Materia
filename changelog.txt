@@ -1,0 +1,189 @@
+Materia 4.0
+-------------
+- Dodano ciemny motyw
+- Unowoczeœniono interfejs programu
+- Poprawiono wygl¹d ikon
+- Poprawiono dzia³anie paska statusu
+- Poprawiono wzór na moment bezw³adnoœci rury
+
+Materia 3.5.1
+-------------
+- Ulepszono interfejs panela odczytywania wyników
+- Poprawiono sposób wyœwietlania reakcji
+- Dodano opcjê odczytywania wyników si³ wewnêtrznym z jednostkowym EA i EJ
+- Od teraz wykresy dla niewidocznych prêtów równie¿ s¹ niewidoczne
+- Drobne poprawki interfejsu
+- Naprawiono b³¹d wyskakuj¹cy przy podwójnym klikniêciu na podporê
+
+Materia 3.5
+-------------
+- Dodanie mo¿liwoœci odczytywania przemieszczeñ z jednostkowym wspó³czynnikiem termicznym
+- Naprawiono dzia³anie odczytywania przemieszczeñ z jednostkowym EA i EJ
+- Zmieniono interfejs dotycz¹cy dwóch powy¿szych funkcji
+- Naprawiono dzia³anie odczytywania zmiany odleg³oœci miêdzy punktami
+- U³atwiono sposób korzystania z funkcji pomijania si³ osiowych na przemieszczenia
+- Naprawiono algorytm sprawdzaj¹cy, czy konstrukcja jest geometrycznie zmienna
+- Dodano narzêdzie "usuñ obci¹¿enie"
+
+Materia 3.4.6
+-------------
+- Ulepszono proces edycji obci¹¿eñ i podpór za pomoc¹ podwójnego klikniêcia
+- Zmniejszono precyzjê klikania na elementy
+
+Materia 3.4.5
+-------------
+- Wprowadzono pamiêæ ostatniej pozycji okna w rejestrze systemu, a nie w pliku w folderze programu
+- Poprawiono b³êdy wprowadzania obci¹¿enia ci¹g³ego
+- Dodano wizualizacje obci¹¿eñ geometrycznych w podporze
+- Zmieniono punkt przy³o¿enia ujemnej si³y skupionej
+- Poprawiono na bardziej czytelne sposoby wyœwietlania wartoœci na rysunku
+- Dodano mo¿liwoœæ ustawienia obramowania tekstu
+
+Materia 3.4.4
+-------------
+- Dodano pe³ne wsparcie dla ekranów o wy¿szym zagêszczeniu pikseli
+- Dodano funkcjê zoomowania za pomoc¹ ramki
+- Dodano funckjê zobaczenia ca³ego modelu poprzez dwukrotne klikniêcie œrodkowym przyciskiem myszy
+- Poprawiono algorytm sprawdania, czy rama jest geometrycznie zmienna
+- Poprawiono b³êdy w menad¿erze projektu
+- Poprawiono b³êdy z wariantami obliczeñ
+- Poprawki drobnych b³êdów
+
+Materia 3.4.3
+-------------
+- Dodano funkcjê obrotu
+- Umo¿liwiono drag&drop plików do otwarcia w programie
+- Poprawiono b³êdy wyœwietlania wyników dzielonych przez EJ i EA
+- Zmieniono domyœlne kolory programu na bardziej nowoczesne
+- Zapamiêtywanie ostatniej pozycji okna programu
+- Poprawiono wyœwietlanie wyników dla zadania geometrycznie zmiennego
+- Poprawiono dzia³anie ignorowania nadmiaru przegubów podczas obliczeñ
+- Poprawki drobnych b³êdów
+
+Materia 3.4.2
+-------------
+- W pe³ni dzia³aj¹ce dostosowywanie pasków narzêdzi
+- Poprawienie dzia³ania panelu wyœwietlaj¹cego dok³adne wyniki
+- Poprawiona szybkoœæ wyœwietlania rysunku
+- Dodano nowy motyw "Nowoczesny"
+
+Materia 3.4.1
+-------------
+- Dodano nowe elementy w pasku narzêdzi: Skala wyników, wybór przekroju, wybór rodzaju prêta
+- Poprawiono b³êdne dzia³anie ustawieñ skali wyników
+
+Materia 3.4
+-------------
+- Dodano funkcjê zrzutu fragmentu ekranu
+- Dodano wiele nowych ikon do pasków narzêdzi
+- Dodano w ustawieniach zak³adkê z ustawieniami pasków narzêdzi - jeszcze niedzia³aj¹ca
+- Dodano funkcjê podgl¹du, menad¿era wariantów, menad¿era projektu i menad¿era przekrojów do modu³u wyników obliczeñ
+- Dodano funkcjê podgl¹du podpór
+
+Materia 3.3
+-------------
+- Rozpoczêto prace nad "Materia 4"
+- Dodano w pe³ni dzia³aj¹cy menad¿er projektu
+- Dodano funkcjê odzyskiwania pliku po nieprawid³owym zamkniêciu programu
+- Dodano funkcjê wyœwietlania wyników podzielonych przez EJ i EA
+- Niektóre przyciski w toolbarach zostaj¹ wciœniête, je¿eli wybrana funkcja jest u¿ywana
+- Ulepszony wybór kolorów interfejsu w ustawieniach
+- Dodano nowe skróty klawiaturowe
+- Usuniêto b³¹d odwracania si³, je¿eli anulowano obliczenia
+- Usuniêto b³¹d wychodzenia poza zakres miejsca zadawania obci¹¿eñ
+- Usuniêto b³¹d edycji wariantów obci¹¿eñ
+- Usuniêto b³¹d po wciœniêciu "otwórz" i "nowy", kiedy by³y otwarte ró¿ne okna i wyniki obliczeñ
+
+Materia 3.2.3
+-------------
+- Zwiêkszono szybkoœæ wyœwietlania rysunku
+- Ulepszono dzia³anie plików tymczasowych
+- Dodano mo¿liwoœæ zmiany motywów programu
+- Zaimplementowano ekran powitalny oraz automatyczne skojarzenie pliku .mtr z programem, podczas pierwszego uruchomienia
+
+Materia 3.2.2
+-------------
+- Dodano mo¿liwoœæ zadawania obci¹¿eñ po wspó³rzêdnych prêta (poziome, pionowe i lokalne)
+
+Materia 3.2.1
+-------------
+- Dodano automatyczny kreator kratownic
+- Poprawki b³êdu wyœwietlania grafiki po wyjœciu z wyników w trakcie wyboru wêz³ów lub prêtów
+- Poprawiono b³¹d zablokowanej mo¿liwoœci rysowania po wyjœciu z menad¿era wariantów
+
+Materia 3.2
+-------------
+- Dodano mo¿liwoœæ wprowadzania wariantów obci¹¿eñ
+- Dodano mo¿liwoœæ automatycznego rozbicia obci¹¿eñ na oddzielne warianty
+- Dodano automatyczny kreator rusztów
+- Dodano mo¿liwoœæ obliczeñ dla statecznoœci
+- Zwiêkszono dok³adnoœæ wyœwietlania wyników
+
+Materia 3.1.1
+-------------
+- Dodano opcjê zmiany interfejsu na du¿e ikony
+
+Materia 3.1
+-------------
+- Dodano modu³ obliczeñ linii wp³ywu
+- Zmiana sposobu zadawania podpór - bardziej intuicyjny interfejs
+
+Materia 3.0
+-------------
+- Zimportowanie programu do œrodowiska graficznego
+- Dodano mo¿liwoœæ wprowadzania danych w formie graficznej
+- Dodano obs³ugê zapisu i odczytu plików
+- Dodano mo¿liwoœæ odczytywania wyników w dowolnym punkcie na prêcie
+
+Materia 2.2
+-------------
+- Ostateczna wersja algorytmu (obliczanie i rysowanie si³ wewnêtrznych na prêtach)
+
+Materia 2.1
+-------------
+- Dodanie wyznaczania przemieszczeñ na prêtach
+- Dodanie graficznej reprezentacji wyników
+
+Materia 2.0
+-------------
+- Zimportowanie algorytmu MES do pascala do momentu wyznaczenia przemieszczeñ w wêz³ach
+
+Materia 1.4
+-------------
+- Zmiana obrotów, od teraz obroty zgodne z ruchem wskazówek zegara s¹ dodatnie
+
+Materia 1.3
+-------------
+- Ukoñczono pe³ny algorytm Metody Elementów Skoñczonych
+
+Materia 1.2.3
+-------------
+- Poprawka w przemieszczeniach od temperatur
+
+Materia 1.2.2
+-------------
+- Uwglêdnienie przemieszczeñ osiowych ze wzglêdu na si³y normalne
+
+Materia 1.2.1
+-------------
+- Poprawka algorytmu MES, dodanie k¹ta pocz¹tkowego dla prêtów z przegubem na pocz¹tku
+
+Materia 1.2
+-------------
+- Przemieszczenia i obroty
+
+Materia 1.1
+-------------
+- Dodano mo¿liwoœæ odczytu wszystkich si³ wewnêtrznych na prêtach
+
+Materia 1.0.5
+-------------
+- Dodano mo¿liwoœæ odczytu momentów na prêtach
+
+Materia 1.0
+-------------
+- Dodano mo¿liwoœæ odczytu przemieszczeñ na prêtach, dodano ró¿nicê temperatur na prêcie
+
+Materia 0.9.5
+-------------
+- Mo¿liwoœæ obliczeñ ramy bez temperatur i wymuszeñ, wyniki w wêz³ach

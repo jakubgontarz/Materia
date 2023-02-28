@@ -1,0 +1,1441 @@
+object Form12: TForm12
+  Left = 538
+  Height = 406
+  Top = 163
+  Width = 493
+  Caption = 'Ustawienia'
+  ClientHeight = 406
+  ClientWidth = 493
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.10.0'
+  object Button3: TButton
+    AnchorSideTop.Control = PageControl1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = PageControl1
+    AnchorSideRight.Side = asrBottom
+    Left = 407
+    Height = 23
+    Top = 377
+    Width = 80
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Top = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button12: TButton
+    AnchorSideTop.Control = Button3
+    AnchorSideRight.Control = Button3
+    AnchorSideBottom.Control = Button3
+    AnchorSideBottom.Side = asrBottom
+    Left = 327
+    Height = 23
+    Top = 377
+    Width = 80
+    Anchors = [akTop, akRight, akBottom]
+    Cancel = True
+    Caption = 'Anuluj'
+    ModalResult = 2
+    OnClick = Button12Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    Tag = 1
+    Left = 6
+    Height = 367
+    Top = 6
+    Width = 481
+    ActivePage = TabSheet3
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ParentFont = False
+    TabIndex = 2
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Podstawowe'
+      ClientHeight = 336
+      ClientWidth = 473
+      ParentFont = False
+      object Label1: TLabel
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Edit5
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 95
+        Width = 196
+        BorderSpacing.Top = 5
+        Caption = 'Skok kursora w trybie skoku [m]: (>0)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object TrackBar3: TTrackBar
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = Edit4
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Edit4
+        AnchorSideBottom.Side = asrBottom
+        Left = 318
+        Height = 23
+        Top = 22
+        Width = 150
+        Max = 100
+        OnChange = TrackBar3Chang
+        Position = 0
+        ShowSelRange = False
+        TabStop = False
+        TickStyle = tsNone
+        Anchors = [akTop, akRight, akBottom]
+        BorderSpacing.Right = 5
+        ParentFont = False
+        TabOrder = 0
+      end
+      object TrackBar2: TTrackBar
+        AnchorSideLeft.Control = Edit4
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Edit4
+        AnchorSideBottom.Control = Edit4
+        AnchorSideBottom.Side = asrBottom
+        Left = 95
+        Height = 23
+        Top = 22
+        Width = 150
+        Max = 200
+        OnChange = TrackBar2Change
+        Position = 0
+        ShowSelRange = False
+        TabStop = False
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akBottom]
+        ParentFont = False
+        TabOrder = 1
+      end
+      object TrackBar1: TTrackBar
+        AnchorSideLeft.Control = TrackBar2
+        AnchorSideTop.Control = Edit5
+        AnchorSideRight.Control = TrackBar2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Edit5
+        AnchorSideBottom.Side = asrBottom
+        Left = 95
+        Height = 23
+        Top = 67
+        Width = 150
+        Max = 200
+        OnChange = TrackBar1Change
+        Position = 0
+        ShowSelRange = False
+        TabStop = False
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Label5: TLabel
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Edit4
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 50
+        Width = 177
+        BorderSpacing.Top = 5
+        Caption = 'Skala odkształceń [pixel]: (0-1600)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label4: TLabel
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = TabSheet1
+        Left = 5
+        Height = 15
+        Top = 5
+        Width = 205
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 5
+        Caption = 'Skala sił wewnętrznych [pixel]: (0-1600)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label3: TLabel
+        AnchorSideLeft.Control = Edit3
+        AnchorSideTop.Control = Label4
+        AnchorSideRight.Side = asrCenter
+        Left = 226
+        Height = 15
+        Top = 5
+        Width = 220
+        Caption = 'Skala obciążeń skupionych [pixel]: (0-100)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label2: TLabel
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Edit1
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 140
+        Width = 215
+        Alignment = taCenter
+        BorderSpacing.Top = 5
+        Caption = 'Podział prętów na elementy FEM: (1-100)'
+        ParentBidiMode = False
+        ParentColor = False
+        ParentFont = False
+      end
+      object TrackBar4: TTrackBar
+        AnchorSideLeft.Control = TrackBar3
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = Edit5
+        AnchorSideRight.Control = TrackBar3
+        AnchorSideRight.Side = asrCenter
+        AnchorSideBottom.Control = Edit5
+        AnchorSideBottom.Side = asrBottom
+        Left = 299
+        Height = 23
+        Top = 67
+        Width = 188
+        Max = 100
+        OnChange = TrackBar4Change
+        Position = 0
+        ShowSelRange = False
+        TabStop = False
+        TickStyle = tsNone
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ParentFont = False
+        TabOrder = 3
+      end
+      object Label7: TLabel
+        AnchorSideLeft.Control = Edit3
+        AnchorSideTop.Control = Label5
+        AnchorSideRight.Side = asrCenter
+        Left = 226
+        Height = 15
+        Top = 50
+        Width = 203
+        Caption = 'Skala obciążeń ciągłych [pixel]: (0-100)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label8: TLabel
+        AnchorSideLeft.Control = Edit3
+        AnchorSideTop.Control = Label1
+        AnchorSideRight.Side = asrCenter
+        Left = 226
+        Height = 15
+        Top = 95
+        Width = 135
+        Caption = 'Autozapis [min]: (0=brak)'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button1: TButton
+        AnchorSideLeft.Control = Edit4
+        AnchorSideBottom.Control = TabSheet1
+        AnchorSideBottom.Side = asrBottom
+        Left = 5
+        Height = 25
+        Top = 306
+        Width = 112
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 5
+        Caption = 'skróty klawiatury'
+        OnClick = Button1Click
+        ParentFont = False
+        TabOrder = 4
+        TabStop = False
+      end
+      object Edit4: TEdit
+        AnchorSideLeft.Control = Label4
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 23
+        Top = 22
+        Width = 90
+        BorderSpacing.Top = 2
+        OnChange = Edit4Change
+        ParentFont = False
+        TabOrder = 5
+      end
+      object Edit5: TEdit
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Label5
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Edit4
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 23
+        Top = 67
+        Width = 90
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        OnChange = Edit5Change
+        ParentFont = False
+        TabOrder = 6
+      end
+      object Edit1: TEdit
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Label1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Edit4
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 23
+        Top = 112
+        Width = 90
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        ParentFont = False
+        TabOrder = 7
+      end
+      object Edit2: TEdit
+        AnchorSideLeft.Control = Edit4
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Edit4
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 23
+        Top = 157
+        Width = 90
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        ParentFont = False
+        TabOrder = 8
+      end
+      object Edit3: TEdit
+        AnchorSideTop.Control = Edit4
+        AnchorSideRight.Control = TrackBar3
+        AnchorSideBottom.Control = Edit4
+        AnchorSideBottom.Side = asrBottom
+        Left = 226
+        Height = 23
+        Top = 22
+        Width = 90
+        Anchors = [akTop, akRight, akBottom]
+        BorderSpacing.Right = 2
+        OnChange = Edit3Change
+        ParentFont = False
+        TabOrder = 9
+      end
+      object Edit6: TEdit
+        AnchorSideLeft.Control = Edit3
+        AnchorSideTop.Control = Edit5
+        AnchorSideRight.Control = Edit3
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Edit5
+        AnchorSideBottom.Side = asrBottom
+        Left = 226
+        Height = 23
+        Top = 67
+        Width = 90
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        OnChange = Edit6Change
+        ParentFont = False
+        TabOrder = 10
+      end
+      object Edit7: TEdit
+        AnchorSideLeft.Control = Edit3
+        AnchorSideTop.Control = Edit1
+        AnchorSideRight.Control = Edit3
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Edit1
+        AnchorSideBottom.Side = asrBottom
+        Left = 226
+        Height = 23
+        Top = 112
+        Width = 90
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ParentFont = False
+        TabOrder = 11
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Podpisy'
+      ClientHeight = 336
+      ClientWidth = 473
+      ParentFont = False
+      object Label6: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TabSheet2
+        Left = 5
+        Height = 15
+        Top = 5
+        Width = 212
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 5
+        Caption = 'Podpisy w trybie wyswietlania podpisów'
+        ParentColor = False
+        ParentFont = False
+      end
+      object CheckGroup2: TCheckGroup
+        AnchorSideLeft.Control = CheckGroup1
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 242
+        Height = 307
+        Top = 24
+        Width = 226
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoFill = True
+        BorderSpacing.Left = 5
+        BorderSpacing.Right = 5
+        BorderSpacing.Bottom = 5
+        Caption = 'Tryb wyłączony'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 287
+        ClientWidth = 222
+        Items.Strings = (
+          'Numeracja węzłów'
+          'Numeracja prętów'
+          'Przekroje'
+          'Wartości obciążeń'
+          'Miejsce obciążeń'
+          'Współrzędne węzłów'
+          'Długości rzutów prętów'
+          'Długości prętów'
+          'Dolne włókna na pręcie'
+          'Podatności i wymuszenia'
+          'Kąty prętów'
+          'Kąty podpór'
+          'Kąty obciążeń'
+        )
+        OnItemClick = CheckGroup2ItemClick
+        ParentFont = False
+        TabOrder = 0
+        Data = {
+          0D00000002020202020202020202020202
+        }
+      end
+      object CheckGroup1: TCheckGroup
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 5
+        Height = 307
+        Top = 24
+        Width = 232
+        Anchors = [akTop, akLeft, akBottom]
+        AutoFill = True
+        BorderSpacing.Left = 5
+        BorderSpacing.Bottom = 5
+        Caption = 'Tryb włączony'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 287
+        ClientWidth = 228
+        Items.Strings = (
+          'Numeracja węzłów'
+          'Numeracja prętów'
+          'Przekroje'
+          'Wartości obciążeń'
+          'Miejsce obciążeń'
+          'Współrzędne węzłów'
+          'Długości rzutów prętów'
+          'Długości prętów'
+          'Dolne włókna na pręcie'
+          'Podatności i wymuszenia'
+          'Kąty prętów'
+          'Kąty podpór'
+          'Kąty obciążeń'
+        )
+        OnItemClick = CheckGroup1ItemClick
+        ParentFont = False
+        TabOrder = 1
+        Data = {
+          0D00000002020202020202020202020202
+        }
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Kolory i czcionki'
+      ClientHeight = 339
+      ClientWidth = 473
+      ParentFont = False
+      object Label9: TLabel
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = ColorButton1
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 12
+        Width = 16
+        BorderSpacing.Left = 5
+        Caption = 'Tło'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label10: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton2
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 36
+        Width = 27
+        Caption = 'Pręty'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label11: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton3
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 60
+        Width = 95
+        Caption = 'Zaznaczone pręty '
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label12: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton4
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 84
+        Width = 31
+        Caption = 'Węzły'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label13: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton5
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 108
+        Width = 94
+        Caption = 'Zaznaczone węzły'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label14: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton6
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 132
+        Width = 58
+        Caption = 'Obciążenia'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label15: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton7
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 180
+        Width = 45
+        Caption = 'Podpory'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label16: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton8
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 204
+        Width = 132
+        Caption = 'Podpory z przesunięciem'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label17: TLabel
+        AnchorSideTop.Control = ColorButton9
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 12
+        Width = 105
+        Anchors = [akTop, akRight]
+        Caption = 'Tło tekstu podglądu'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label18: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton10
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 36
+        Width = 101
+        Caption = 'Tło tekstu obciążeń'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label19: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton11
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 60
+        Width = 137
+        Caption = 'Wykresy sił wewnętrznych'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label20: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton12
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 84
+        Width = 123
+        Caption = 'Wykresy przemieszczeń'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label21: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton13
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 108
+        Width = 102
+        Caption = 'Osie, kursor, napisy'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label22: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton14
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 132
+        Width = 129
+        Caption = 'Ramki, linie pomocnicze'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label23: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = Edit8
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 204
+        Width = 120
+        Caption = 'Rozmiar dużego tekstu'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label24: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = Edit9
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 228
+        Width = 121
+        Caption = 'Rozmiar małego tekstu'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit8: TEdit
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton8
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton8
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 200
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ParentFont = False
+        TabStop = False
+        TabOrder = 0
+      end
+      object Edit9: TEdit
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = Edit8
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        Left = 389
+        Height = 23
+        Top = 224
+        Width = 68
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        ParentFont = False
+        TabStop = False
+        TabOrder = 1
+      end
+      object Label25: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton15
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 156
+        Width = 40
+        Caption = 'Reakcje'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label26: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ColorButton16
+        AnchorSideTop.Side = asrCenter
+        Left = 5
+        Height = 15
+        Top = 156
+        Width = 121
+        Caption = 'Obciążenia nieaktywne'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ComboBox1: TComboBox
+        AnchorSideBottom.Control = TabSheet3
+        AnchorSideBottom.Side = asrBottom
+        Left = 112
+        Height = 23
+        Top = 311
+        Width = 184
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 5
+        ItemHeight = 15
+        OnChange = ComboBox1Change
+        ParentColor = True
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Label27: TLabel
+        AnchorSideLeft.Control = Label9
+        AnchorSideTop.Control = ComboBox1
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = TabSheet3
+        AnchorSideBottom.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 315
+        Width = 93
+        BorderSpacing.Bottom = 5
+        Caption = 'Motyw programu'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ColorButton1: TColorButton
+        Left = 144
+        Height = 22
+        Top = 8
+        Width = 68
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton2: TColorButton
+        AnchorSideTop.Control = ColorButton1
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 32
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton3: TColorButton
+        AnchorSideTop.Control = ColorButton2
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 56
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton4: TColorButton
+        AnchorSideTop.Control = ColorButton3
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 80
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton5: TColorButton
+        AnchorSideTop.Control = ColorButton4
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 104
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton6: TColorButton
+        AnchorSideTop.Control = ColorButton5
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 128
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton7: TColorButton
+        AnchorSideTop.Control = ColorButton16
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 176
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton8: TColorButton
+        AnchorSideTop.Control = ColorButton7
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 200
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton9: TColorButton
+        AnchorSideTop.Control = ColorButton1
+        AnchorSideBottom.Control = ColorButton1
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 8
+        Width = 68
+        Anchors = [akTop, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton10: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton2
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton2
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 32
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton11: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton3
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton3
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 56
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton12: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton4
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton4
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 80
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton13: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton5
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton5
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 104
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton14: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton6
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton6
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 128
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton15: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton16
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton16
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 152
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object ColorButton16: TColorButton
+        AnchorSideTop.Control = ColorButton6
+        AnchorSideTop.Side = asrBottom
+        Left = 144
+        Height = 22
+        Top = 152
+        Width = 68
+        BorderSpacing.Top = 2
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object CheckBox2: TCheckBox
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = Edit9
+        AnchorSideTop.Side = asrBottom
+        Left = 238
+        Height = 19
+        Top = 249
+        Width = 116
+        BorderSpacing.Top = 2
+        Caption = 'Siatka jako punkty'
+        ParentFont = False
+        TabOrder = 3
+      end
+      object Label30: TLabel
+        AnchorSideLeft.Control = Label17
+        AnchorSideTop.Control = ColorButton17
+        AnchorSideTop.Side = asrCenter
+        Left = 238
+        Height = 15
+        Top = 180
+        Width = 31
+        Caption = 'Siatka'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ColorButton17: TColorButton
+        AnchorSideLeft.Control = ColorButton9
+        AnchorSideTop.Control = ColorButton7
+        AnchorSideRight.Control = ColorButton9
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ColorButton7
+        AnchorSideBottom.Side = asrBottom
+        Left = 389
+        Height = 22
+        Top = 176
+        Width = 68
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderWidth = 0
+        ButtonColorSize = 16
+        ButtonColor = clBlack
+        Caption = '#121415'
+        Color = clNone
+        Flat = True
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = 15
+        Font.Name = 'Consolas'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        OnColorChanged = ColorButton1Click
+        ParentFont = False
+      end
+      object CheckBox3: TCheckBox
+        AnchorSideLeft.Control = CheckBox2
+        AnchorSideTop.Control = CheckBox2
+        AnchorSideTop.Side = asrBottom
+        Left = 238
+        Height = 19
+        Top = 270
+        Width = 130
+        BorderSpacing.Top = 2
+        Caption = 'Obramowania tekstu'
+        ParentFont = False
+        TabOrder = 4
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Pasek narzędzi'
+      ClientHeight = 336
+      ClientWidth = 473
+      ParentFont = False
+      object ListView1: TListView
+        AnchorSideLeft.Control = Button2
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label28
+        AnchorSideTop.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet4
+        AnchorSideBottom.Side = asrBottom
+        Left = 69
+        Height = 306
+        Top = 25
+        Width = 192
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 5
+        BorderSpacing.Bottom = 5
+        Checkboxes = True
+        Columns = <        
+          item
+            Width = 10
+          end>
+        IconOptions.WrapText = False
+        Items.LazData = {
+          850600003100000000000000FFFFFFFFFFFFFFFF000000000C00000054797020
+          7072C4997461203101000000FFFFFFFFFFFFFFFF000000000C00000054797020
+          7072C499746120320A000000FFFFFFFFFFFFFFFF000000000B00000052797375
+          6A207072C499740B000000FFFFFFFFFFFFFFFF00000000110000005369C58261
+          20736B7570696F6E612E2E2E0C000000FFFFFFFFFFFFFFFF0000000010000000
+          4F62632E206369C48567C582652E2E2E0D000000FFFFFFFFFFFFFFFF00000000
+          120000004D6F6D656E7420736B7570696F6E792E2E2E0E000000FFFFFFFFFFFF
+          FFFF000000000E00000054656D70657261747572612E2E2E0F000000FFFFFFFF
+          FFFFFFFF000000000900000050727A656E6965C59B10000000FFFFFFFFFFFFFF
+          FF00000000060000004B6F7069756A11000000FFFFFFFFFFFFFFFF0000000006
+          0000004C757374726F12000000FFFFFFFFFFFFFFFF0000000011000000506F64
+          7A69656C207072C49974792E2E2E13000000FFFFFFFFFFFFFFFF000000000800
+          0000506F64676CC4856402000000FFFFFFFFFFFFFFFF000000000C0000005479
+          70207072C4997461203314000000FFFFFFFFFFFFFFFF00000000050000005573
+          75C58415000000FFFFFFFFFFFFFFFF00000000090000004F626C69637A2E2E2E
+          16000000FFFFFFFFFFFFFFFF00000000130000004F737461746E696120706F64
+          706F72612E2E2E03000000FFFFFFFFFFFFFFFF000000000C0000005479702070
+          72C499746120341E000000FFFFFFFFFFFFFFFF00000000130000005A6E616A64
+          C5BA2070727A656369C49963696121000000FFFFFFFFFFFFFFFF000000001100
+          0000506F70727A65646E692077617269616E7422000000FFFFFFFFFFFFFFFF00
+          000000110000004E617374C499706E792077617269616E7423000000FFFFFFFF
+          FFFFFFFF00000000160000005065C5826E6520757477696572647A656E69652E
+          2E2E24000000FFFFFFFFFFFFFFFF000000001B000000557477696572647A656E
+          6965207A2070727A65737577656D2E2E2E25000000FFFFFFFFFFFFFFFF000000
+          0010000000576F6C6E6120706F64706F72612E2E2E26000000FFFFFFFFFFFFFF
+          FF0000000016000000506F64706F7261207A2070727A65737577656D2E2E2E27
+          000000FFFFFFFFFFFFFFFF0000000011000000426C6F6B616461206F62726F74
+          752E2E2E04000000FFFFFFFFFFFFFFFF00000000180000004D656E6164C5BC65
+          722070727A656B726F6AC3B3772E2E2E2A000000FFFFFFFFFFFFFFFF00000000
+          080000005A616B6FC584637A2B000000FFFFFFFFFFFFFFFF0000000005000000
+          506F6D6F632C000000FFFFFFFFFFFFFFFF00000000140000004D617465726961
+          202D20696E666F726D61636A652D000000FFFFFFFFFFFFFFFF000000000E0000
+          005A617069737A206A616B6F2E2E2E2E000000FFFFFFFFFFFFFFFF0000000010
+          0000005A617A6E61637A2077737A7973746B6F2F000000FFFFFFFFFFFFFFFF00
+          0000000D000000557374617769656E69612E2E2E30000000FFFFFFFFFFFFFFFF
+          00000000150000004D656E6164C5BC65722070726F6A656B74752E2E2E310000
+          00FFFFFFFFFFFFFFFF00000000170000004D656E6164C5BC6572207761726961
+          6E74C3B3772E2E2E32000000FFFFFFFFFFFFFFFF00000000110000004B726561
+          746F72207275737A74752E2E2E33000000FFFFFFFFFFFFFFFF00000000150000
+          004B726561746F72206B7261746F776E6963792E2E2E05000000FFFFFFFFFFFF
+          FFFF00000000040000004E6F777934000000FFFFFFFFFFFFFFFF000000000E00
+          00005A72C3B362207A646AC49963696535000000FFFFFFFFFFFFFFFF00000000
+          100000005779626965727A20706F64706F72C49936000000FFFFFFFFFFFFFFFF
+          00000000120000005779626965727A20747970207072C499746141000000FFFF
+          FFFFFFFFFFFF000000000F000000577962C3B3722077617269616E7475410000
+          00FFFFFFFFFFFFFFFF0000000010000000577962C3B3722070727A656B726F6A
+          7506000000FFFFFFFFFFFFFFFF000000000A0000004F7477C3B3727A2E2E2E07
+          000000FFFFFFFFFFFFFFFF00000000060000005A617069737A08000000FFFFFF
+          FFFFFFFFFF0000000006000000436F666E696A09000000FFFFFFFFFFFFFFFF00
+          00000006000000506F6EC3B37737000000FFFFFFFFFFFFFFFF00000000040000
+          005A6F6F6D38000000FFFFFFFFFFFFFFFF00000000060000004F6272C3B37439
+          000000FFFFFFFFFFFFFFFF0000000012000000557375C584206F626369C485C5
+          BC656E6965
+        }
+        LargeImages = Form1.ImageList1
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssVertical
+        ShowColumnHeaders = False
+        SmallImages = Form1.ImageList1
+        TabOrder = 0
+        ViewStyle = vsSmallIcon
+        OnEnter = ListView1Enter
+        OnSelectItem = ListView1SelectItem
+      end
+      object Button2: TButton
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideTop.Control = TabSheet4
+        Left = 5
+        Height = 25
+        Top = 5
+        Width = 59
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 5
+        Caption = 'W górę'
+        OnClick = Button2Click
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Button4: TButton
+        AnchorSideLeft.Control = Button2
+        AnchorSideTop.Control = Button2
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Button2
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 25
+        Top = 32
+        Width = 59
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        Caption = 'W dół'
+        OnClick = Button4Click
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Button5: TButton
+        AnchorSideLeft.Control = Button4
+        AnchorSideTop.Control = Button4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Button4
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 25
+        Top = 59
+        Width = 59
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        Caption = 'Separator'
+        OnClick = Button5Click
+        ParentFont = False
+        TabOrder = 3
+      end
+      object Button6: TButton
+        AnchorSideLeft.Control = Button5
+        AnchorSideTop.Control = Button5
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Button5
+        AnchorSideRight.Side = asrBottom
+        Left = 5
+        Height = 25
+        Top = 86
+        Width = 59
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        Caption = 'Usuń'
+        Enabled = False
+        OnClick = Button6Click
+        ParentFont = False
+        TabOrder = 4
+      end
+      object Label28: TLabel
+        AnchorSideLeft.Control = ListView1
+        AnchorSideTop.Control = TabSheet4
+        Left = 69
+        Height = 15
+        Top = 5
+        Width = 100
+        BorderSpacing.Top = 5
+        Caption = 'Tryb modelowania:'
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label29: TLabel
+        AnchorSideLeft.Control = ListView2
+        AnchorSideTop.Control = Label28
+        Left = 266
+        Height = 15
+        Top = 5
+        Width = 75
+        Caption = 'Tryb wyników:'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ListView2: TListView
+        AnchorSideLeft.Control = ListView1
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = ListView1
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = ListView1
+        AnchorSideBottom.Side = asrBottom
+        Left = 266
+        Height = 306
+        Top = 25
+        Width = 202
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSort = False
+        BorderSpacing.Left = 5
+        BorderSpacing.Right = 5
+        Checkboxes = True
+        Columns = <        
+          item
+            Width = 10
+          end>
+        Items.LazData = {
+          240300001900000005000000FFFFFFFFFFFFFFFF00000000040000004E6F7779
+          06000000FFFFFFFFFFFFFFFF000000000A0000004F7477C3B3727A2E2E2E0700
+          0000FFFFFFFFFFFFFFFF00000000060000005A617069737A13000000FFFFFFFF
+          FFFFFFFF0000000008000000506F64676CC4856417000000FFFFFFFFFFFFFFFF
+          00000000080000004E6F726D616C6E6518000000FFFFFFFFFFFFFFFF00000000
+          06000000546EC485636519000000FFFFFFFFFFFFFFFF00000000070000004D6F
+          6D656E74791A000000FFFFFFFFFFFFFFFF000000000F00000050727A656D6965
+          737A637A656E69611B000000FFFFFFFFFFFFFFFF00000000070000005265616B
+          636A651C000000FFFFFFFFFFFFFFFF0000000007000000506F7772C3B3741D00
+          0000FFFFFFFFFFFFFFFF000000000C0000004E617072C499C5BC656E69612100
+          0000FFFFFFFFFFFFFFFF0000000011000000506F70727A65646E692077617269
+          616E7422000000FFFFFFFFFFFFFFFF00000000110000004E617374C499706E79
+          2077617269616E742A000000FFFFFFFFFFFFFFFF000000000800000057796AC5
+          9B6369652B000000FFFFFFFFFFFFFFFF0000000005000000506F6D6F632C0000
+          00FFFFFFFFFFFFFFFF00000000140000004D617465726961202D20696E666F72
+          6D61636A652D000000FFFFFFFFFFFFFFFF000000000E0000005A617069737A20
+          6A616B6F2E2E2E2F000000FFFFFFFFFFFFFFFF000000000D0000005573746177
+          69656E69612E2E2E30000000FFFFFFFFFFFFFFFF00000000150000004D656E61
+          64C5BC65722070726F6A656B74752E2E2E31000000FFFFFFFFFFFFFFFF000000
+          00170000004D656E6164C5BC65722077617269616E74C3B3772E2E2E34000000
+          FFFFFFFFFFFFFFFF000000000E0000005A72C3B362207A646AC4996369654100
+          0000FFFFFFFFFFFFFFFF000000000F000000577962C3B3722077617269616E74
+          7504000000FFFFFFFFFFFFFFFF00000000180000004D656E6164C5BC65722070
+          727A656B726F6AC3B3772E2E2E41000000FFFFFFFFFFFFFFFF000000000B0000
+          00537577616B20736B616C6937000000FFFFFFFFFFFFFFFF0000000004000000
+          5A6F6F6D
+        }
+        LargeImages = Form1.ImageList1
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssVertical
+        ShowColumnHeaders = False
+        SmallImages = Form1.ImageList1
+        TabOrder = 5
+        ViewStyle = vsSmallIcon
+        OnEnter = ListView2Enter
+        OnSelectItem = ListView2SelectItem
+      end
+    end
+  end
+end

@@ -1,0 +1,29 @@
+z draw
+1 delete
+x force
+c distributed
+v moment
+b temperature
+q support
+q support-XYM
+w support-XM
+e support-XY
+r support-X
+t support-M
+a move
+s copy
+d mirror
+f rotate
+g divide
+h intersections
+p preview
+\ polarangle
+m sectionmanager
+n projectmanager
+2 staticsolve
+3 liniawplywu
+4 staticseparate
+5 bucklingsolve
+= back
+
+

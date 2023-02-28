@@ -1,0 +1,175 @@
+object Form7: TForm7
+  Left = 1176
+  Height = 233
+  Top = 398
+  Width = 272
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Podział pręta'
+  ClientHeight = 233
+  ClientWidth = 272
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '2.0.10.0'
+  object RadioButton1: TRadioButton
+    Left = 4
+    Height = 19
+    Top = 9
+    Width = 97
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 5
+    Caption = 'Równomiernie'
+    Checked = True
+    OnChange = RadioButton1Change
+    ParentFont = False
+    TabOrder = 5
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = RadioButton1
+    AnchorSideRight.Control = Button10
+    AnchorSideRight.Side = asrBottom
+    Left = 132
+    Height = 19
+    Top = 9
+    Width = 76
+    Anchors = [akTop, akRight]
+    BorderSpacing.Left = 40
+    Caption = 'W punkcie'
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = RadioButton1
+    AnchorSideTop.Control = SpinEdit1
+    AnchorSideTop.Side = asrCenter
+    Left = 4
+    Height = 15
+    Top = 34
+    Width = 49
+    Caption = 'Elementy'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    AnchorSideTop.Control = Button10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Button10
+    AnchorSideRight.Side = asrBottom
+    Left = 128
+    Height = 24
+    Top = 145
+    Width = 80
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 40
+    BorderSpacing.Bottom = 5
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button17: TButton
+    AnchorSideTop.Control = Button1
+    AnchorSideRight.Control = Button1
+    AnchorSideBottom.Control = Button1
+    AnchorSideBottom.Side = asrBottom
+    Left = 48
+    Height = 24
+    Top = 145
+    Width = 80
+    Anchors = [akTop, akRight, akBottom]
+    Cancel = True
+    Caption = 'Anuluj'
+    ModalResult = 2
+    OnClick = Button17Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = FloatSpinEdit1
+    AnchorSideTop.Side = asrCenter
+    Left = 4
+    Height = 15
+    Top = 59
+    Width = 67
+    Caption = 'Położenie [-]'
+    ParentColor = False
+    ParentFont = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 4
+    Height = 22
+    Top = 80
+    Width = 150
+    Max = 100
+    OnChange = TrackBar1Change
+    PageSize = 10
+    Position = 50
+    ShowSelRange = False
+    TabStop = False
+    TickStyle = tsNone
+    Enabled = False
+    OnMouseUp = TrackBar1MouseUp
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Button10: TButton
+    AnchorSideLeft.Control = TrackBar1
+    AnchorSideLeft.Side = asrBottom
+    Left = 154
+    Height = 25
+    Top = 80
+    Width = 54
+    AutoSize = True
+    BorderSpacing.Right = 5
+    Caption = 'Odw.'
+    Enabled = False
+    OnClick = Button10Click
+    ParentFont = False
+    TabOrder = 4
+    TabStop = False
+  end
+  object SpinEdit1: TSpinEdit
+    AnchorSideTop.Control = RadioButton1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = RadioButton2
+    AnchorSideRight.Side = asrBottom
+    Left = 118
+    Height = 23
+    Top = 30
+    Width = 90
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 2
+    MaxValue = 1000
+    MinValue = 1
+    OnChange = SpinEdit1Change
+    ParentFont = False
+    TabOrder = 6
+    Value = 1
+  end
+  object FloatSpinEdit1: TFloatSpinEdit
+    AnchorSideLeft.Control = SpinEdit1
+    AnchorSideTop.Control = SpinEdit1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = SpinEdit1
+    AnchorSideRight.Side = asrBottom
+    Left = 118
+    Height = 23
+    Top = 55
+    Width = 90
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 2
+    DecimalPlaces = 4
+    Increment = 0.1
+    MaxValue = 1
+    OnChange = FloatSpinEdit1Change
+    ParentFont = False
+    TabOrder = 7
+    Value = 0.5
+  end
+end
